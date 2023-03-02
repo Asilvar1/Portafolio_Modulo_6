@@ -9,6 +9,10 @@ router.get('/', function(req, res, next) {
     res.send(data);
   });
 });
-
+// Ruta para almacenar un nuevo producto
+router.post('/', (req, res) => {
+  // Lógica para almacenar el nuevo producto
+  fs.writeFile('Producto almacenado');
+});
 module.exports = router;
 

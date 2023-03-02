@@ -3,17 +3,27 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var bodyParser = require('body-parser');
 
 
 var indexRouter = require('./routes/index');
 var carritoRouter = require('./routes/carrito');
+var ventasRouter = require('./routes/ventas');
+var productosRouter = require('./routes/productos');
 
 var app = express();
+
+// apertura de servidor
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000')
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -22,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/carrito', carritoRouter);
+app.use('/ventas', ventasRouter);
+app.use('/productos', productosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

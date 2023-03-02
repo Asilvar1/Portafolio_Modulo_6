@@ -1,1 +1,1 @@
-[{"id":1,"nombre":"Producto 1","precio":10,"imagen":"imagen1.png"},{"id":2,"nombre":"Producto 2","precio":20,"imagen":"imagen2.png"},{"id":3,"nombre":"Producto 3","precio":30,"imagen":"imagen3.png"}]
+[{"id":1,"nombre":"Analisis ROI","precio":6000,"imagen":"./Assets/img/Foto5.jpg","stock":5},{"id":2,"nombre":"Evaluacion Psicolaboral","precio":8000,"imagen":"./Assets/img/Foto5.jpg","stock":5},{"id":3,"nombre":"Atracción de Talento","precio":4000,"imagen":"./Assets/img/Foto5.jpg","stock":5}]

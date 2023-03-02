@@ -5,24 +5,28 @@
                 id: 1,
                 nombre: 'Analisis ROI',
                 precio: 6000,
-                imagen: './Assets/img/Foto5.jpg',
+                imagen: '/public/images/Foto5.jpg',
+                stock: 5
             },
             {
                 id: 2,
                 nombre: 'Evaluacion Psicolaboral',
                 precio: 8000,
-                imagen: './Assets/img/Foto5.jpg'
+                imagen: '/public/images/Foto5.jpg',
+                stock: 5
             },
             {
                 id: 3,
                 nombre: 'Atracción de Talento',
                 precio: 4000,
-                imagen: './Assets/img/Foto5.jpg'
+                imagen: '/public/images/Foto5.jpg',
+                stock: 5
             }
             
 
         ];
-
+        /* const baseDeDatos = fetch('http://localhost:3000/productos') */
+        
         let carrito = [];
         const divisa = '$';
         const DOMitems = document.querySelector('#items');
@@ -186,7 +190,6 @@ function calculateDiscount(discountCode) {
         return 0;
     }
 }
-
-
 //const id=sdf [(1,23,45,6)]
+
 
